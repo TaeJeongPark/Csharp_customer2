@@ -87,7 +87,7 @@ namespace Project2
                 return;
             }
 
-            UpdateForm subForm = new UpdateForm();
+            UpdateForm subForm = new UpdateForm(list_member.Items[list_member.SelectedItems[0].Index].SubItems[0].Text);
             subForm.ShowDialog();
             this.Close();
         }
@@ -100,7 +100,7 @@ namespace Project2
                 return;
             }
 
-            DeleteForm subForm = new DeleteForm();
+            DeleteForm subForm = new DeleteForm(list_member.Items[list_member.SelectedItems[0].Index].SubItems[0].Text);
             subForm.ShowDialog();
             this.Close();
         }

@@ -49,6 +49,7 @@
             this.btn_cancel.TabIndex = 23;
             this.btn_cancel.Text = "취소";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_ok
             // 
@@ -58,6 +59,7 @@
             this.btn_ok.TabIndex = 22;
             this.btn_ok.Text = "수정";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // tb_birth
             // 
@@ -156,6 +158,8 @@
             this.Controls.Add(this.label1);
             this.Name = "UpdateForm";
             this.Text = "회원 정보 수정";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateForm_FormClosed);
+            this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

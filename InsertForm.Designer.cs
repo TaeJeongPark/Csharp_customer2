@@ -127,6 +127,7 @@
             this.btn_ok.TabIndex = 11;
             this.btn_ok.Text = "입력";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // btn_cancel
             // 
@@ -136,6 +137,7 @@
             this.btn_cancel.TabIndex = 12;
             this.btn_cancel.Text = "취소";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // InsertForm
             // 
@@ -155,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "InsertForm";
             this.Text = "신규 회원 입력";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InsertForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

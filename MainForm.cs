@@ -38,7 +38,7 @@ namespace Project2
                 return;
             }
 
-            UpdateForm update = new UpdateForm();
+            UpdateForm update = new UpdateForm(tb_updel_id.Text);
             update.ShowDialog();
         }
 
@@ -51,7 +51,7 @@ namespace Project2
                 return;
             }
 
-            DeleteForm delete = new DeleteForm();
+            DeleteForm delete = new DeleteForm(tb_updel_id.Text);
             delete.ShowDialog();
         }
     }

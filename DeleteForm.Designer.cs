@@ -49,6 +49,7 @@
             this.btn_cancel.TabIndex = 34;
             this.btn_cancel.Text = "취소";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_ok
             // 
@@ -58,6 +59,7 @@
             this.btn_ok.TabIndex = 33;
             this.btn_ok.Text = "삭제";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // tb_birth
             // 
@@ -159,6 +161,8 @@
             this.Controls.Add(this.label1);
             this.Name = "DeleteForm";
             this.Text = "회원 삭제";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DeleteForm_FormClosed);
+            this.Load += new System.EventHandler(this.DeleteForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
